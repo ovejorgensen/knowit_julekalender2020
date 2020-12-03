@@ -31,6 +31,6 @@ def diagonals(ndarr):
 
 
 [horizontals(item) for item in (M, np.fliplr(M), M.transpose(), np.fliplr(M.transpose()))]
-[diagonals(item) for item in (M, np.fliplr(M), M.transpose(), np.fliplr(M.transpose()))]
+[diagonals(item) for item in (np.fliplr(M), M.transpose())]
 
 [print(word) for word in WORDS if word not in RESULT_SET]
