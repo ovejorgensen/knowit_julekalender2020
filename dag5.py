@@ -1,8 +1,7 @@
 import requests
 import matplotlib.pyplot as plt
 
-response = requests.get('https://julekalender-backend.knowit.no/challenges/5/attachments/rute.txt')
-data = response.text
+data = requests.get('https://julekalender-backend.knowit.no/challenges/5/attachments/rute.txt').text
 
 arr = [(0, 0)]
 for el in data:
