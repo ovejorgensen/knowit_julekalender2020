@@ -4,7 +4,7 @@ data = requests.get('https://julekalender-backend.knowit.no/challenges/6/attachm
 data = [int(x) for x in data]
 ELVES = 127
 
-elf_list = [0]*ELVES
+elf_list = [0]*ELVES 
 done = False
 while not done:
     for box in data:
