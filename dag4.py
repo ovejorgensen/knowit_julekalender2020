@@ -1,4 +1,5 @@
 cakes = melk = mel = sukker = egg = 0
+
 with open("files/leveringsliste.txt", "r") as f:
     rows = f.read().splitlines()
 
