@@ -7,11 +7,11 @@ arr = [(0, 0)]
 for el in data:
     if el == 'H':
         arr.append((arr[-1][0]+1, arr[-1][1]))
-    elif el == 'V':
+    elif el == 'V': 
         arr.append((arr[-1][0]-1, arr[-1][1]))
     elif el == 'O':
         arr.append((arr[-1][0], arr[-1][1]+1))
-    else:
+    else: 
         arr.append((arr[-1][0], arr[-1][1]-1))
 
 def find_area(array):
