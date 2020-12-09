@@ -29,7 +29,6 @@ def diagonals(ndarr):
     horizontals(result.transpose())
     horizontals(np.fliplr(result.transpose()))
 
-
 [horizontals(item) for item in (M, np.fliplr(M), M.transpose(), np.fliplr(M.transpose()))]
 [diagonals(item) for item in (np.fliplr(M), M.transpose())]
 
