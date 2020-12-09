@@ -1,7 +1,7 @@
 import requests
 data = requests.get('https://julekalender-backend.knowit.no/challenges/8/attachments/input.txt').text.split('\n')
 
-# Fikser opp i denne senere :)
+# Fikser opp i denne senere :))
 locations = {key_val.split(':')[0]:{'location':(int(key_val.split(':')[1].split(',')[0].replace('(','')), int(key_val.split(':')[1].split(',')[1].replace(')', ''))), 'time':0} for key_val in data if ':' in key_val}
 
 data = [item.split(':')[0] if ':' in item else item for item in data]
